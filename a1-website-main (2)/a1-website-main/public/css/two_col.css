@@ -1,0 +1,25 @@
+.two-col {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  max-width: flex;
+}
+
+aside {
+  color: rgb(237, 231, 234);
+  background-color: #333;
+}
+
+.two-col main {
+  width: calc(100% * 20 / 24);
+  flex: 10; 
+}
+
+.two-col aside {
+  width: calc(100% *  6 / 24);
+  flex: 4; 
+}
+
+
+
+

@@ -1,0 +1,66 @@
+/* Typography */
+.typo {
+  background-color: #333;
+  padding: 1em; /* Added padding for better spacing */
+}
+
+.typo h1,
+.typo h2,
+.typo h3,
+.typo h4,
+.typo h5,
+.typo h6 {
+  color: rgb(202, 111, 233);
+  margin-top: 0; /* Remove default margin for better spacing */
+}
+
+.typo p {
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 1em; /* Added margin for better spacing */
+}
+
+.typo strong {
+  color: springgreen;
+}
+
+.typo table {
+  border: 2px dashed;
+  width: 100%; /* Make tables responsive by default */
+  margin-bottom: 1em; /* Added margin for better spacing */
+}
+
+.typo td {
+  border: 2px solid;
+  padding: 0.5em; /* Added padding for better spacing */
+}
+
+.typo caption {
+  color: cyan;
+}
+
+/* Media query for screens with a maximum width of 600px */
+/*@media screen and (max-width: 800px) {
+  .typo p {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .columns aside {
+    height: fit-content;
+    text-align: center;
+    min-width: fit-content;
+  }
+
+  .typo {
+    width: fit-content;
+    height: fit-content;
+  }
+}*/
+
+
+@media (max-width: 700px) {
+  body {
+    font-size: 20px;
+  }
+}

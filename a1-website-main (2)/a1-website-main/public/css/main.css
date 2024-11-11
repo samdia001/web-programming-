@@ -1,0 +1,76 @@
+main {
+  margin: 0; /* Make the div center */
+
+  /* max-width: 700px; */
+  color: rgb(211, 185, 198);
+  background-color: #333;
+  padding: 2em; /* em is a size related to the current base font */
+
+  padding-bottom: 2em;
+  overflow: auto;
+  width: 1400px;
+}
+
+
+h1 {
+  border-bottom: 1px double rgb(211, 185, 198);
+}
+
+.rounded {
+  border-radius: 20%;
+}
+
+a {
+  color: rgb(211, 185, 198);
+}
+
+a:hover {
+  color: white;
+}
+
+.left {
+  float: right;
+  width: 70%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+
+}
+
+.right {
+  float: right;
+  width: 70%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+figcaption {
+  /*padding-top: 0.3em;*/
+  font-style: italic;
+}
+
+.credit-card-link{
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.aside {
+  text-align: center; /* Center-align text */
+  float: right;
+  width: 30%;
+}
+
+/* Style for the bad jokes */
+.aside h3 {
+  font-size: 25px;
+  color: #ebe8e8;
+}
+
+.aside p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #fffbfb;
+}
+
+

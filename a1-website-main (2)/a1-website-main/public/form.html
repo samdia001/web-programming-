@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Credit Card Details Form</title>
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="shortcut icon" href="favicon.ico" />
+   
+</head>
+<body>
+
+  <div class="container">
+    <h2>Enter Credit Card Details</h2>
+    <form id="credit-card-form" action="#" method="post" onsubmit="submitForm(event)">
+      <div class="form-group">
+        <label for="name">Name on Card:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount to be Drawn:</label>
+        <input type="text" id="amount" name="amount" required>
+      </div>
+      <div class="form-group">
+        <label for="card-type">Card Type:</label>
+        <select id="card-type" name="card-type" required>
+          <option value="visa">Visa</option>
+          <option value="mastercard">Mastercard</option>
+          <option value="amex">American Express</option>
+          <option value="descover">Discover Network</option>
+          <!-- Add other card types as needed -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" required>
+      </div>
+      <div class="form-group">
+        <label for="validity">Validity (MM/YYYY):</label>
+        <input type="text" id="validity" name="validity" placeholder="MM/YYYY" required>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="submit-button">Submit</button>
+      </div>
+      <div class="content"></div>
+    </form>
+
+    <!-- Success message container -->
+    <div id="success-message" class="hidden">
+      <p>Congratulations! Your card has been added successfully.</p>
+    </div>
+  </div>
+
+  <img src="img\cards.png" alt="Bottom Image" class="bottom-image">
+
+  <img src="img/masterCard.png" alt="Left Image" class="side-image left-image">
+  <img src="img/visaCard.png" alt="Right Image" class="side-image right-image">
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault(); // Prevent form submission (for demonstration purposes)
+
+      // Display success message
+      document.getElementById('success-message').classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>

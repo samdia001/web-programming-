@@ -1,0 +1,48 @@
+
+.two-col {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+}
+
+.two-col main {
+  width: calc(100% * 14 / 24);
+}
+
+.two-col aside {
+  width: calc(100% * 5 / 24);
+}
+
+.three-col {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.three-col main {
+  width: calc(100% * 14 / 24);
+}
+
+.three-col aside {
+  width: calc(100% * 5 / 24);
+}
+
+.three-col aside.left {
+  order: -2;
+}
+
+/** Make the two and three column pages responsive using media queries **/
+@media screen and (max-width: 768px) {
+  .two-col,
+  .three-col {
+    flex-direction: column;
+  }
+
+  .two-col main,
+  .two-col aside,
+  .three-col main,
+  .three-col aside {
+    width: 100%;
+  }
+}

@@ -1,0 +1,34 @@
+.navbar {
+  background-color:rgb(113, 118, 113);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+
+  display: inline-block;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 30px;
+  margin: 8px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: rgb(211, 185, 198);
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 16px;
+}

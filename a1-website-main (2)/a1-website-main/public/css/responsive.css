@@ -1,0 +1,162 @@
+/* For img elements, set max-width */
+img {
+  max-width: 40%;
+}
+
+/* Media query for screens with a maximum width of 10px */
+@media (max-width: 10px) {
+  /* Three-column layout adjustments */
+  .three-col {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .three-col main {
+    width: calc(100% * 16 / 24);
+    order: 1;
+    flex-wrap: wrap;
+    margin: 0;
+    flex: 1;
+  }
+
+  .three-col aside.right {
+    width: calc(100% * 8 / 24);
+    order: 2;
+    flex-wrap: wrap;
+  }
+
+  .three-col aside.left {
+    width: 200%;
+    order: 3;
+    flex-wrap: wrap;
+  }
+}
+
+/* Media query for screens with a maximum width of 700px */
+@media (max-width: 700px) {
+  /* Three-column layout adjustments */
+  .three-col main,
+  .three-col aside.right {
+    width: fit-content;
+    flex-wrap: wrap;
+
+  }
+
+  /* Two-column layout adjustments */
+  .two-col {
+    flex-wrap: wrap;
+  }
+
+  .two-col main,
+  .two-col aside {
+    width: 100%;
+  }
+
+  /* Body adjustments */
+  body {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    font-size: 20px
+    
+  }
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+  /* Footer adjustments */
+  .sitefooter .row {
+    flex-wrap: wrap;
+  }
+
+  .sitefooter .row > .col3 {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .columns aside {
+    height: fit-content;
+    text-align: center;
+    min-width: 70%;
+  }
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media screen and (max-width: 800px) {
+  .typo p {
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  .typo {
+    font-size: 20px;
+    height: fit-content;
+    text-align: center;
+    min-width: fit-content;
+    width: fit-content;
+    order: 1;
+    margin: 0;
+    flex: 1;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .three-col {
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    height: fit-content;
+    text-align: center;
+    min-width: fit-content;
+    width: fit-content;
+    order: 1;
+    margin: 0;
+    flex: 1;
+  }
+
+  .columns aside {
+    height: fit-content;
+    text-align: center;
+    min-width: 90%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+
+
+@media screen and (max-width: 700px) {
+  h1, h2, h3, h4, h5, h6,
+  p, strong,
+  .typo td {
+    font-size: 1.2em;
+  }
+}

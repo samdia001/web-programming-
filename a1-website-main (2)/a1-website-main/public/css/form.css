@@ -1,0 +1,128 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 70%;
+  margin: 50px auto;
+  background-color: #a09c9c;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+input[type="text"],
+select {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  width: calc(100% - 22px); /* Adjust width for better appearance */
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #3498db;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+
+.hidden {
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}  
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Add additional styles for your content */
+  }
+  
+.bottom-image {
+    position: absolute;
+    bottom: -1;
+    left: 70%; /*had mkan al sora fe a montasaf*/
+    transform: translateX(50%);
+    width: 250px; /* Adjust width as needed */
+    height: 200px; /* Maintain aspect ratio */
+}
+
+
+.side-image {
+    position: absolute;
+    top: 0;
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+  
+.left-image {
+    left: 0;
+}
+  
+.right-image {
+    right: 0;
+}
+
+
+/* Apply styles to the submit button */
+.submit-button {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    /* Add other button styles as needed */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+  
+.submit-button:hover {
+    background-color: #2980b9;
+}
