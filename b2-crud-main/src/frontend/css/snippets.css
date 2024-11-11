@@ -1,0 +1,175 @@
+
+.snippets-page-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.snippets-page {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  place-content: center;
+}
+
+.stars {
+  display: inline-block;
+  transform: rotateY(-180deg);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+
+
+.rate::before {
+  content: "\2605";
+}
+
+.rate {
+  color: #6e6868;
+  font-size: 2rem;
+  margin: 0 0.1rem;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked ~ .rate,
+.rate:hover,
+.rate:hover ~ label {
+  color: rgb(153, 124, 8);
+}
+
+input[type="radio"]:checked ~ .rate::before,
+.rate:hover ~ .rate::before {
+  content: "\2605";
+}
+
+
+.single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.snippet {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border-radius: 30px;
+  max-width: 70%;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #194566;
+  border: 4px solid #020101;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.snippet-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.snippet-title {
+  padding: 10px;
+}
+
+.edit-delete-btns {
+  display: flex;
+}
+
+.edit-link,
+.delete-link {
+  margin-left: 10px;
+}
+
+.snippet-info {
+  padding: 10px;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.snippet-description {
+  padding: 10px;
+}
+
+.code {
+  overflow-x: auto;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+.edit-link,
+.delete-link {
+  margin: 10px;
+  background-color: #204a20;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: italic;
+  font-family: "Comic Sans MS", cursive;
+  border-radius: 20px;
+}
+
+.create-link {
+  margin: 10px;
+  background-color: #0c3956;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: italic;
+  font-family: "Comic Sans MS", cursive;
+  border-radius: 20px;
+}
+
+.delete-link {
+  background-color: rgb(86, 32, 32);
+}
+
+.create-link:hover,
+.edit-link:hover {
+  background-color: #005da4;
+}
+
+.delete-link:hover {
+  background-color: rgb(116, 84, 84);
+}
+
+

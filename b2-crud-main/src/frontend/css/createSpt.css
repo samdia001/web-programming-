@@ -1,0 +1,76 @@
+.create-snippet {
+  margin: 30px;
+  border-radius: 20px;
+  background-color: #49626a;
+  border: 4px solid #020101;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  font-family: "Comic Sans MS", cursive;
+}
+
+.create-snippet div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+#create-snippet-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#create-snippet-form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#create-snippet-form input[type="text"],
+#create-snippet-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 4px solid #110e0e;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+#create-snippet-form textarea {
+  background-color: #ccc;
+}
+
+#create-snippet-form textarea.snippet {
+  height: 200px;
+  width: 100%;
+}
+
+#create-snippet-form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.snippet-save {
+  margin-top: 20px;
+  background-color: #0b283b;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  width: 30%;
+}
+
+.snippet-save:hover {
+  background-color: #005da4;
+}
